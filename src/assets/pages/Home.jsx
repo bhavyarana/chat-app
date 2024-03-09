@@ -1,13 +1,16 @@
 import React from 'react';
-import Register from './Register';
-import Login from './Login';
+import Sidebar from '../components/Sidebar';
+import Chat from '../components/Chat';
+
 
 const Home =()=>{
     return(
-        <>
-            <Register/>
-            <Login/>
-        </>
+        <div className='home'>
+            <div className="home-container">
+                <Sidebar/>
+                <Chat/>
+            </div>
+        </div>
     )
 }
 
